@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter</title>
+ <link rel="stylesheet" href="/static/CSS/main.css" type="text/css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <!-- <div class="header">
+      <h1>Twitter Feed</h1>
+    </div> -->
+
+    <div>
+      <div class = "companyHeader">
+        <div class="header">
+          <h1>Twitter Feed</h1>
+        </div>         
+      </div>
+       <div class ="searchArea">
+       
+       <form action="/twitter/getFeed" method="post">
+        {% if errorMessage %}
+          <span class ="errMsg">{{errorMessage}}</span>
+       {% endif %}
+        <input type="text" class="searchText" placeholder="Search # tag" name="searchText"/>
+        <button name="btnSearchText" class="btnSearchText" >Search</button>
+         </form>
+      </div>
+   
+
+
+    </div>
+
+   
+    <div class="data-div">
+      <ul>  
+        {% for item in statuses %}    
+        <li><img src="{{item.user.profile_image_url}}"/><br>{{item.user.name}}</li>
+        <li>{{item.text}}</li>
+        <li>Retweet : {{item.retweet_count}} , favorite : {{item.favorite_count}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

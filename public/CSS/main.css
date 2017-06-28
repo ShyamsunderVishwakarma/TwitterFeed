@@ -1,0 +1,103 @@
+
+    ul,li
+    {
+      padding: 0;
+      margin: 0;
+    }
+    .header
+    {
+      text-align: center;
+      background: #00aced;
+      color: white;
+      padding-left: 39px;
+      padding-right: 77px;
+      border-radius: 6px;
+    }
+    .header h1
+    {
+      color: white;
+    }
+    .data-div
+    {
+      border: 2px solid #00aced;
+      border-radius: 4px;
+      overflow:auto;
+      clear: both;
+      padding: 10px;
+      height: 650px;
+    }
+    .data-div ul
+    {
+      list-style-type: none;
+      overflow: hidden;
+    }
+    
+
+   .main-wrapper 
+   {
+      width: 89%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .data-div ul li
+    {
+      float:left;
+      width: 31%;
+      border: 1px solid black;
+      padding: 10px;
+      min-height: 90px;
+    }
+    .data-div ul li:nth-child(odd)
+    {
+      text-align: center;
+    }
+    .data-div ul li:nth-child(even)
+    {
+      border-left: none;
+      text-align: center;
+    }
+    .searchText
+    {       
+      width: 29%;
+      height: 41px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-size: 20px;
+      font-family: serif;
+    }
+    .btnSearchText
+    {
+       background-color: #4CAF50; /* Green */
+       border: none;
+       color: white;
+       padding: 12px 19px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       border-radius: 10px;
+    }
+    .searchArea
+    {
+      float: right;
+      padding-top: 14px;
+      width: 48%;
+    }
+
+    .companyHeader
+    {
+      float:left;
+    }
+
+    .main-wrapper .searchArea form
+    {
+      text-align: right;
+    }
+
+    .main-wrapper .searchArea form .errMsg
+    {
+      color: red;
+      font-size: 20px;
+      font-family: arial;
+    }

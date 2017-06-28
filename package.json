@@ -1,0 +1,13 @@
+{
+  "name": "twitter-proj",
+  "description": "This is my first example",
+  "version": "1.0.0",
+  "author": "Shyam",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nunjucks": "^3.0.1",
+    "twit": "^2.2.9"
+  }
+}
